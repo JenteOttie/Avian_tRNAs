@@ -1,7 +1,8 @@
 # R Script to plot tRNA locations on chromosomes
 # https://stackoverflow.com/questions/33727432/how-to-plot-positions-along-a-chromosome-graphic
 
-# This script is tailored for the chicken genome (other species have their own scripts)
+# This script is tailored for the Chicken genome (other species have their own scripts)
+# Other species: Flycatcher, Great Tit, Guineafowl, House Sparrow, Turkey, Zebrafinch
 
 install.packages("ggrepel")
 
