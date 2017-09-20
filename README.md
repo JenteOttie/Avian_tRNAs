@@ -7,15 +7,17 @@ This project contains python and R-scripts to analyze the tRNA content of bird g
 
 *1a. GENERAL PATTERNS*
 
-tRNAscan.py: Run tRNAscan-SE on all available bird genomes (combination of three scripts)
+Running tRNAscan on available bird genomes and visualizing results
 
-Heatmap.R: Visualize tRNA content of bird genomes in a heatmap
+> tRNAscan.py: Run tRNAscan-SE on all available bird genomes (combination of three scripts)
+
+> Heatmap.R: Visualize tRNA content of bird genomes in a heatmap
 
 *1b. FILTERING OUT TE-DERIVED tRNAs*
 
 The general overview of tRNA content in bird genomes revealed that certain species contain extremely high numbers of particular tRNAs (e.g., Isoleucine in Trogon). These tRNAs are derived from transposable elements (TEs). The following scripts were used to filter these TE-derived tRNAs out.
 
-TE_Filter.py: Filters out sequences that overlap with certain TE (based on BLASTn search). Sequence similarity threshold is determined by user (ranging from 1e-50 to 1e-10).
+> TE_Filter.py: Filters out sequences that overlap with certain TE (based on BLASTn search). Sequence similarity threshold is determined by user (ranging from 1e-50 to 1e-10).
 
 *WORK IN PROGRESS*
 
@@ -23,16 +25,16 @@ TE_Filter.py: Filters out sequences that overlap with certain TE (based on BLAST
 
 *2a. GENERAL LOCATIONS ON CHROMOSOMES*
 
-Plot_tRNAs_on_Chromosomes.R: Creates figure with tRNAs mapped to chicken chromosomes (other species have specific scripts)
+> Plot_tRNAs_on_Chromosomes.R: Creates figure with tRNAs mapped to chicken chromosomes (other species have specific scripts)
 
 *2b. CLUSTERING ON CHROMOSOMES*
 
 First distances between consecutive tRNAs are calculated (tRNA_Distances.py). The output of this analysis is then used to calculate the median distance, both genome-wide and chromosome-specific (Median_Distance.R). The genome-wide median distance is used as a threshold to check for clustering of tRNAs (tRNA_Clusters.py). The nature of these clusters - size and content - is visualized in a histogram (tRNA_Cluster_Contents.R)
 
-tRNA_Distances.py: Extract genomic locations of tRNAs from specific text-file and calculate distance between consecutive tRNAs
+> tRNA_Distances.py: Extract genomic locations of tRNAs from specific text-file and calculate distance between consecutive tRNAs
 
-Median_Distance.R: Calculate median distances between tRNAs, genome-wide and chromosome-specific
+> Median_Distance.R: Calculate median distances between tRNAs, genome-wide and chromosome-specific
 
-tRNA_Clusters.py: Check for clusters of tRNAs, using the genome-wide median distance as a threshold
+> tRNA_Clusters.py: Check for clusters of tRNAs, using the genome-wide median distance as a threshold
 
-tRNA_Cluster_Contents.R: Creates Histogram that shows number of tRNAs per cluster and whether the clusters are homogeneous (i.e. coding for same aminoacids) or heterogeneous (i.e. coding for different aminoacids)
+> tRNA_Cluster_Contents.R: Creates Histogram that shows number of tRNAs per cluster and whether the clusters are homogeneous (i.e. coding for same aminoacids) or heterogeneous (i.e. coding for different aminoacids)
