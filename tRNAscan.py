@@ -1,4 +1,5 @@
 # This Python script runs tRNAscan-SE on all the available bird genomes
+# On the server, this script is spread over three seperate scripts in order to run the analyses in parallel
 
 # The bird genomes are spread over three different folders on the UPPMAX server
 # 48_genomes: containing the 48 genomes used in the Science paper by Jarvis et al. (2014)
