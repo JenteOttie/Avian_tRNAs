@@ -9,4 +9,4 @@ tRNA_Clusters.py: Extract genomic locations of tRNAs from specific text-file and
 
 Plot_tRNAs_on_Chromosomes.R: Creates plot with tRNAs mapped to chicken chromosomes (other species have specific scripts)
 
-tRNA_Cluster_Content.R: Creates Histogram that shows number of tRNAs per cluster and whether the clusters are homogeneous (i.e. coding for same aminoacids) or heterogeneous (i.e. coding for different aminoacids)
+tRNA_Cluster_Contents.R: Creates Histogram that shows number of tRNAs per cluster and whether the clusters are homogeneous (i.e. coding for same aminoacids) or heterogeneous (i.e. coding for different aminoacids)
