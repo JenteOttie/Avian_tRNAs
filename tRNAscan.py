@@ -20,14 +20,16 @@ code = ["hala", "hall", "cath", "anas", "chae", "caly", "buce", "cari", "char", 
 for i in range(0, len(species)):
 	print( "Analyzing " + species[i] + " with code " + code[i] + "\n")
 
-	#Unzip Fastafile
+	# Unzip Fastafile
 	os.system("gunzip /proj/snic2017-7-108/private/48_genomes/" + code[i] + ".fa.gz")
-	#Run tRNAscan
+	
+	# Run tRNAscan
 	# -o saves an overview file with genomic locations of all tRNAs
 	# -m saves a summary file on the tRNA content
 	# -f saves a file containing sequence information of each tRNA
 	os.system("tRNAscan-SE -o /home/jente/private/tRNA_Overview/" + species[i] + "_tRNA.txt -m /home/jente/private/tRNA_Summaries" + species[i] + ".txt -f /home/jente/private/tRNA_Sequences/" + species[i] + "_sequences.txt  /proj/snic2017-7-108/private/48_genomes/" + code[i] + ".fa")
-	#Re-zip the Fasta-file
+	
+	# Re-zip the Fasta-file
 	os.system("gzip /proj/snic2017-7-108/private/48_genomes/" + code[i] + ".fa")
   
 ################################################################################
@@ -45,14 +47,16 @@ code = ["aquChr1", "ansCyg1", "aptMan1", "calPug_ruff_EG1", "falChe1", "colVir1"
 for i in range(0, len(species)):
 	print( "Analyzing " + species[i] + " with code " + code[i] + "\n")
 
-	#Unzip Fastafile
+	# Unzip Fastafile
 	os.system("gunzip /proj/snic2017-7-108/private/more_bird_genomes_June2016/" + code[i] + ".fa.gz")
-	#Run tRNAscan
+	
+	# Run tRNAscan
         # -o saves an overview file with genomic locations of all tRNAs
         # -m saves a summary file on the tRNA content
         # -f saves a file containing sequence information of each tRNA
         os.system("tRNAscan-SE -o /home/jente/private/tRNA_Overview/" + species[i] + "_tRNA.txt -m /home/jente/private/tRNA_Summaries" + species[i] + ".txt -f /home/jente/private/tRNA_Sequences/" + species[i] + "_sequences.txt  /proj/snic2017-7-108/private/more_bird_genomes_June2016/" + code[i] + ".fa")
-	#Re-zip the Fasta-file
+	
+	# Re-zip the Fasta-file
 	os.system("gzip /proj/snic2017-7-108/private/more_bird_genomes_June2016/" + code[i] + ".fa")
   
 ###################################################################
@@ -70,12 +74,14 @@ code = ["anas_zonorhyncha", "antrostomus", "ciconia", "patagoenias", "numida", "
 for i in range(0, len(species)):
 	print( "Analyzing " + species[i] + " with code " + code[i] + "\n")
 
-	#Unzip Fastafile
+	# Unzip Fastafile
 	os.system("gunzip /proj/snic2017-7-108/private/extra_bird_genomes/" + code[i] + ".fa.gz")
-	#Run tRNAscan
+	
+	# Run tRNAscan
         # -o saves an overview file with genomic locations of all tRNAs
         # -m saves a summary file on the tRNA content
         # -f saves a file containing sequence information of each tRNA
         os.system("tRNAscan-SE -o /home/jente/private/tRNA_Overview/" + species[i] + "_tRNA.txt -m /home/jente/private/tRNA_Summaries" + species[i] + ".txt -f /home/jente/private/tRNA_Sequences/" + species[i] + "_sequences.txt  /proj/snic2017-7-108/private/extra_bird_genomes/" + code[i] + ".fa")
-	#Re-zip the Fasta-file
+	
+	# Re-zip the Fasta-file
 	os.system("gzip /proj/snic2017-7-108/private/extra_bird_genomes/" + code[i] + ".fa")
