@@ -64,7 +64,7 @@ import os.path
 # List of all the species that will be analyzed
 species = ["spot-billed_duck", "nightjar", "stork", "band-tailed_pigeon", "guineafowl", "scaled_quail", "turkey", "grus", "munia", "warbler", "sparrow", "seedeater", "auritus", "brasilianus", "harrisi", "urile", "budgerigar"]
 
-# Names of files (corresponding to the species list above
+# Names of files in the folder (corresponding to the species list above)
 code = ["anas_zonorhyncha", "antrostomus", "ciconia", "patagoenias", "numida", "callipepla", "meleagris", "grus", "lonchura", "setophaga", "passer", "sporophila", "nannopterum_auritus", "nannopterum_brasilianus", "nannopterum_harrisi", "urile", "melopsittacus"]
 
 for i in range(0, len(species)):
