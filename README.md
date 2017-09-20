@@ -29,4 +29,8 @@ First distances between consecutive tRNAs are calculated (tRNA_Distances.py). Th
 
 tRNA_Distances.py: Extract genomic locations of tRNAs from specific text-file and calculate distance between consecutive tRNAs
 
+Median_Distance.R: Calculate median distances between tRNAs, genome-wide and chromosome-specific
+
+tRNA_Clusters.py: Check for clusters of tRNAs, using the genome-wide median distance as a threshold
+
 tRNA_Cluster_Contents.R: Creates Histogram that shows number of tRNAs per cluster and whether the clusters are homogeneous (i.e. coding for same aminoacids) or heterogeneous (i.e. coding for different aminoacids)
