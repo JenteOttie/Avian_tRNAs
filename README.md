@@ -15,6 +15,8 @@ Heatmap.R: Visualize tRNA content of bird genomes in a heatmap
 
 The general overview of tRNA content in bird genomes revealed that certain species contain extremely high numbers of particular tRNAs (e.g., Isoleucine in Trogon). These tRNAs are derived from transposable elements (TEs). The following scripts were used to filter these TE-derived tRNAs out.
 
+TE_Filter.py: Filters out sequences that overlap with certain TE (based on BLASTn search). Sequence similarity threshold is determined by user (ranging from 1e-50 to 1e-10).
+
 *WORK IN PROGRESS*
 
 # 2. GENOMIC DISTRIBUTION
